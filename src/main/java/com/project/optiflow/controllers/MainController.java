@@ -13,20 +13,22 @@ public class MainController {
         model.addAttribute("title", "Main Page");
         return "home";
     }
-    @GetMapping("/MyResumes")
+
+    @GetMapping({"/MyResumes"})
     public String MyResumes(Model model) {
         model.addAttribute("title", "My Resumes");
         return "MyResumes";
     }
-    @GetMapping("/Responses")
+
+    @GetMapping({"/Responses"})
     public String Responses(Model model) {
         model.addAttribute("title", "Responses");
         return "Responses";
     }
-    @GetMapping("/FAQs")
+
+    @GetMapping({"/FAQs"})
     public String FAQs(Model model) {
         model.addAttribute("title", "FAQs");
         return "FAQs";
     }
-
 }
